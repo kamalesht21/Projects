@@ -44,7 +44,7 @@ nav {
     nav{
         background-color: #000000;
         position: relative;
-        right: 600px;
+        right: 730px;
     }
 }
 
@@ -84,12 +84,6 @@ nav a:hover {
     }
   }
 
-
-
-  
-  
-
-
 .profile-img {
     width: 480px;
     height: 480px;
@@ -100,14 +94,16 @@ nav a:hover {
     box-shadow: 8px 8px 15px rgba(24, 13, 13, 0.5);
     transition: 0.3s;
 }
-@media  (min-width: 380px) and (max-width:1500px){
+@media  (min-width: 628px) and (max-width:1500px){
     .profile-img{
         display: grid;
         grid-template-columns: 
         repeat(auto-fit, minmax(300px, 1fr));
         gap: 40px;
         position: relative;
-        left: 140px;  
+        left: 50px;  
+        top: 60px;
+        right: 50px;
     }
 }
 
@@ -118,12 +114,7 @@ nav a:hover {
         repeat(auto-fit, minmax(300px, 1fr));
         gap: 40px;
         position: relative;
-        
-    
-        
-    
     }
-    
 }
 
 
@@ -132,12 +123,14 @@ nav a:hover {
     border: 4px solid #ff0000;
 
 }
-@media  (min-width: 380px) and (max-width:1500px){
+@media  (min-width: 600px) and (max-width:1500px){
     .content{
         display: grid;  
         position: relative; 
-        top: 490px;
-        right: 240px;
+        top: 30px;
+        right: 40px;
+        margin-left: 150px;
+        text-align: center;
     }
 }
 
@@ -205,7 +198,7 @@ p {
 @media  (min-width: 380px) and (max-width:1500px){
     .skills-section{
         display: grid;   
-        gap: 470px;
+        gap: 200px;
     }
 }
 
@@ -213,8 +206,9 @@ p {
     .skill2{
         display: grid;
         position: relative;
-        top: 440px;
-        gap: 170px;
+        top: 200px;
+        gap: 70px;
+        bottom: 200px;
     
     }
 }
@@ -257,7 +251,7 @@ p {
 @media  (min-width: 380px) and (max-width:1500px){
     .project-card{
         position: relative;
-        right: 230px;
+        right: 290px;
     }
     
 }
