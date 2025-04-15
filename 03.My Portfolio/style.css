@@ -1,0 +1,356 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+    
+}
+
+
+
+nav {
+    display: flex;
+    grid-gap: 40px;
+    background-color: #0b39c2;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    padding-left: 800px;
+    padding-top: 20px;
+    animation: slide-in 0.9s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+
+}
+
+
+@keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(calc(-50% * var(--direction)));
+    }
+  
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+
+
+@media  (min-width: 380px) and (max-width:1500px){
+    nav{
+        background-color: #000000;
+        position: relative;
+        right: 600px;
+    }
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 900;
+    scroll-behavior: smooth;
+    display: inline-block;
+
+    
+}
+nav a:hover {
+    text-decoration: none;
+    color: #ff0000;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    flex-direction: row;
+    max-width: 900px;
+    margin: auto;
+    animation: fade-bottom 1s ease-in;
+}
+@keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+
+  
+  
+
+
+.profile-img {
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    margin-right: 0px;
+    border: 4px solid #1500ff;
+    margin-right: 250px;
+    box-shadow: 8px 8px 15px rgba(24, 13, 13, 0.5);
+    transition: 0.3s;
+}
+@media  (min-width: 380px) and (max-width:1500px){
+    .profile-img{
+        display: grid;
+        grid-template-columns: 
+        repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        position: relative;
+        left: 140px;  
+    }
+}
+
+@media  (min-width: 380px) and (max-width:1500px){
+    .container{
+        display: grid;
+        grid-template-columns: 
+        repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+        position: relative;
+        
+    
+        
+    
+    }
+    
+}
+
+
+.profile-img:hover{
+    transform: scale(1.05);
+    border: 4px solid #ff0000;
+
+}
+@media  (min-width: 380px) and (max-width:1500px){
+    .content{
+        display: grid;  
+        position: relative; 
+        top: 490px;
+        right: 240px;
+    }
+}
+
+
+.content {
+    text-align: left;
+}
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+h2 {
+    font-size: 30px;
+    color: #4169E1;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.btn {
+    background-color: #0040ff ;
+    color: white;
+    border: 2px solid rgb(20, 2, 2);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 0px 15px 0px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.btn:hover {
+    background-color: #ff0000;
+    border-radius: 15px 0px 15px 0px;
+    
+
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #000000;
+    padding: 50px 0;
+    text-align: center;
+    animation: fade-bottom 1s ease-in;
+}
+@keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+@media  (min-width: 380px) and (max-width:1500px){
+    .skills-section{
+        display: grid;   
+        gap: 470px;
+    }
+}
+
+@media  (min-width: 380px) and (max-width:1500px){
+    .skill2{
+        display: grid;
+        position: relative;
+        top: 440px;
+        gap: 170px;
+    
+    }
+}
+.skill2 {
+    margin-bottom: 0px;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    
+    
+}
+.skill-card {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.skill-card:hover {
+    transform: scale(1.05);
+}
+.skill-card img {
+    width: 80px;
+    height: 80px;
+}
+.skill-card h3 {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+/* Projects Section */
+
+@media  (min-width: 380px) and (max-width:1500px){
+    .project-card{
+        position: relative;
+        right: 230px;
+    }
+    
+}
+
+.projects-section {
+    background-color: #000000;
+    padding: 50px 0;
+    text-align: center;
+    animation: fade-bottom 1s ease-in;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin-top: 70px;
+    margin-left: 430px;
+}
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    grid-gap: 60px;
+    text-align: center;
+    transition: 0.9s;
+}
+.project-card:hover{
+    transform: scale(1.08);
+    border: 4px solid #000dff;
+}
+.project-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+.project-card h1 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.project-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+.project-card button {
+    background-color: #0040ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.project-card button:hover {
+    background-color: #ff0000;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #000000;
+    padding: 50px 0;
+    text-align: center
+;
+}
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+form {
+    max-width: 600px;
+    margin: auto;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form textarea {
+    resize: none;
+    height: 150px;
+}
+form button {
+    background-color: #0040ff;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #ff0000;
+}
+
